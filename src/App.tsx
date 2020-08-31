@@ -28,7 +28,7 @@ interface UserInterface {
 }
 
 const client = new ApolloClient({
-  uri: "http://172.20.113.112:8080/graphql",
+  uri: process.env.REACT_APP_GRAPHQL_SERVER,
   cache: new InMemoryCache(),
 });
 
